@@ -41,7 +41,9 @@ p { margin: 0; }
 .wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
 
 /* hero */
-.hero { padding: 72px 0 56px; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 36px; align-items: center; }
+.hero { padding: 64px 0 56px; display: grid; justify-items: center; text-align: center; gap: 22px; }
+.hero .where, .hero .links, .hero .lines { justify-content: center; }
+.hero .lede { margin-inline: auto; }
 .photo { width: 168px; height: 168px; border-radius: 50%; object-fit: cover; box-shadow: 0 0 0 6px var(--surface), 0 0 0 8px var(--line); }
 .hero h1 { font-size: clamp(2.2rem, 6vw, 3.4rem); font-weight: 800; }
 .role { font: 600 1.25rem var(--display); color: var(--accent); margin-top: 6px; }
@@ -51,6 +53,7 @@ p { margin: 0; }
 .links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
 .btn { display: inline-flex; align-items: center; gap: 8px; padding: 9px 16px; border-radius: 999px; border: 1.5px solid var(--line); background: var(--surface); text-decoration: none; font-weight: 700; font-size: 0.95rem; transition: border-color 0.15s, transform 0.15s; }
 .btn:hover { border-color: var(--accent); transform: translateY(-1px); }
+.btn { font-family: inherit; color: inherit; cursor: pointer; }
 .btn.primary { background: var(--accent); border-color: var(--accent); color: var(--bg); }
 .btn svg { width: 17px; height: 17px; flex: none; }
 .lines { display: flex; gap: 6px; margin-top: 28px; }
@@ -115,7 +118,7 @@ footer { padding: 36px 0 56px; border-top: 1px solid var(--line); color: var(--m
 footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; }
 
 @media (max-width: 720px) {
-  .hero { grid-template-columns: minmax(0, 1fr); padding-top: 44px; gap: 22px; }
+  .hero { padding-top: 40px; }
   .photo { width: 128px; height: 128px; }
   .feature { grid-template-columns: minmax(0, 1fr); padding: 20px; }
   .job-head { flex-direction: column; }
@@ -132,7 +135,7 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
     <p class="where"><span>Ankara, Türkiye</span><span>Open to remote</span></p>
     <p class="lede">Android Software Engineer with 4+ years of experience developing and maintaining production Android applications using Kotlin and Java. Skilled in Android architecture, feature development, performance optimization, and release management. Experienced in independently delivering Android applications and collaborating with cross-functional teams to build and improve production software.</p>
     <nav class="links" aria-label="Contact">
-      <a class="btn primary" href="mailto:albakkar997@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Email me</a>
+      <button type="button" class="btn primary" id="email-btn" data-email="albakkar997@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span>albakkar997@gmail.com</span></button>
       <a class="btn" href="https://www.linkedin.com/in/abdulrahman-albakkar/" rel="me"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.5h4V21H3V9.5Zm6.5 0h3.8v1.6h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1V21h-4v-5.1c0-1.22-.02-2.78-1.7-2.78-1.7 0-1.96 1.33-1.96 2.7V21h-4V9.5Z"/></svg>LinkedIn</a>
       <a class="btn" href="https://github.com/abdulrahmanalbakkar" rel="me"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.56 9.56 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.93.36.31.68.92.68 1.86v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>GitHub</a>
     </nav>
@@ -255,5 +258,14 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
 <footer>
   <div class="wrap"><span>© 2026 Abdulrahman Albakkar</span><a href="mailto:albakkar997@gmail.com">albakkar997@gmail.com</a></div>
 </footer>
+<script>
+// Copy the address instead of relying on a mail app being set up (mailto: does nothing on many computers).
+document.getElementById('email-btn').addEventListener('click', async function () {
+  const label = this.querySelector('span'), email = this.dataset.email;
+  try { await navigator.clipboard.writeText(email); label.textContent = 'Copied: ' + email; }
+  catch (e) { location.href = 'mailto:' + email; return; }
+  setTimeout(() => { label.textContent = email; }, 2200);
+});
+</script>
 </body>
 </html>
