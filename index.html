@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abdulrahman Albakkar · Android Software Engineer</title>
+<meta name="description" content="Android Software Engineer in Ankara with 4+ years building production apps in Kotlin: Mynet Haber (1M+ users), Tasbih (50K+ downloads), Finly. Creator of Android Lab.">
+<link rel="canonical" href="https://abdulrahmanalbakkar.github.io/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Abdulrahman Albakkar · Android Software Engineer">
+<meta property="og:description" content="4+ years building production Android apps in Kotlin. Mynet Haber, Tasbih, Finly, and Android Lab.">
+<meta property="og:url" content="https://abdulrahmanalbakkar.github.io/">
+<meta property="og:image" content="https://abdulrahmanalbakkar.github.io/photo.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#F4F8F5" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0B130F" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=JetBrains+Mono:wght@500;600&display=swap">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Abdulrahman Albakkar","jobTitle":"Android Software Engineer","url":"https://abdulrahmanalbakkar.github.io/","image":"https://abdulrahmanalbakkar.github.io/photo.jpg","address":{"@type":"PostalAddress","addressLocality":"Ankara","addressCountry":"TR"},"alumniOf":"Ankara University","sameAs":["https://www.linkedin.com/in/abdulrahman-albakkar/","https://github.com/abdulrahmanalbakkar"]}
+</script>
+<style>
+:root {
+  --bg: #F4F8F5; --surface: #FFFFFF; --sunk: #E8EFEA; --ink: #0F1A14; --muted: #55635B; --line: #DCE5DF;
+  --accent: #0A7443; --accent-soft: #DDF3E6; --hi: #16A35A; --l2: #1E8F82; --l3: #7A55E8;
+  --display: "Bricolage Grotesque", system-ui, sans-serif; --body: "Atkinson Hyperlegible", system-ui, sans-serif; --mono: "JetBrains Mono", ui-monospace, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0B130F; --surface: #121D17; --sunk: #18251E; --ink: #E8F2EC; --muted: #9DB0A5; --line: #24342B;
+    --accent: #3DDC84; --accent-soft: #163626; --hi: #3DDC84; --l2: #2BB3A3; --l3: #8E6CF0; color-scheme: dark; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 400 1.04rem/1.6 var(--body); }
+a { color: inherit; }
+h1, h2, h3 { font-family: var(--display); line-height: 1.15; margin: 0; letter-spacing: -0.01em; }
+p { margin: 0; }
+.wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+
+/* hero */
+.hero { padding: 72px 0 56px; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 36px; align-items: center; }
+.photo { width: 168px; height: 168px; border-radius: 50%; object-fit: cover; box-shadow: 0 0 0 6px var(--surface), 0 0 0 8px var(--line); }
+.hero h1 { font-size: clamp(2.2rem, 6vw, 3.4rem); font-weight: 800; }
+.role { font: 600 1.25rem var(--display); color: var(--accent); margin-top: 6px; }
+.where { color: var(--muted); margin-top: 8px; display: flex; flex-wrap: wrap; gap: 4px 14px; }
+.where span::before { content: ""; display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--hi); margin-right: 8px; vertical-align: 2px; }
+.lede { margin-top: 18px; max-width: 60ch; font-size: 1.1rem; }
+.links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 9px 16px; border-radius: 999px; border: 1.5px solid var(--line); background: var(--surface); text-decoration: none; font-weight: 700; font-size: 0.95rem; transition: border-color 0.15s, transform 0.15s; }
+.btn:hover { border-color: var(--accent); transform: translateY(-1px); }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+.btn svg { width: 17px; height: 17px; flex: none; }
+.lines { display: flex; gap: 6px; margin-top: 28px; }
+.lines i { height: 6px; width: 72px; border-radius: 99px; background: var(--hi); }
+.lines i:nth-child(2) { background: var(--l2); } .lines i:nth-child(3) { background: var(--l3); }
+
+/* sections */
+section { padding: 40px 0; border-top: 1px solid var(--line); }
+.label { font: 600 0.76rem var(--mono); text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); margin-bottom: 18px; }
+section > .wrap > h2 { font-size: 1.7rem; margin-bottom: 22px; }
+
+/* featured */
+.feature { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 28px; align-items: center; padding: 26px; border-radius: 22px; background: #0B130F; color: #E8F2EC; text-decoration: none; transition: transform 0.15s; }
+.feature:hover { transform: translateY(-2px); }
+.feature h3 { font-size: 1.8rem; color: #3DDC84; }
+.feature p { color: #B5C6BB; margin-top: 8px; }
+.feature .go { display: inline-block; margin-top: 16px; font: 600 0.9rem var(--mono); color: #3DDC84; }
+.feature img { width: 100%; height: auto; border-radius: 12px; display: block; }
+.stats { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-top: 14px; font: 600 0.82rem var(--mono); color: #9DB0A5; }
+
+/* apps */
+.apps { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 380px), 1fr)); gap: 14px; }
+.app { display: grid; gap: 6px; align-content: start; padding: 18px; border-radius: 16px; background: var(--surface); border: 1.5px solid var(--line); text-decoration: none; transition: border-color 0.15s, transform 0.15s; }
+.app:hover { border-color: var(--accent); transform: translateY(-2px); }
+.app h3 { font-size: 1.15rem; }
+.app .meta { font: 600 0.78rem var(--mono); color: var(--accent); }
+.app p { color: var(--muted); font-size: 0.95rem; }
+.app .more { display: flex; flex-wrap: wrap; gap: 4px 14px; margin-top: 4px; font: 600 0.82rem var(--mono); }
+.app .more a { color: var(--ink); text-decoration-color: var(--hi); text-underline-offset: 3px; }
+
+/* experience */
+.jobs { list-style: none; margin: 0; padding: 0 0 0 26px; position: relative; display: grid; gap: 28px; }
+.jobs::before { content: ""; position: absolute; left: 6px; top: 10px; bottom: 10px; width: 3px; border-radius: 99px; background: var(--line); }
+.job { position: relative; }
+.job::before { content: ""; position: absolute; left: -26px; top: 7px; width: 15px; height: 15px; border-radius: 50%; background: var(--bg); border: 3px solid var(--hi); }
+.job:nth-child(2)::before { border-color: var(--l2); } .job:nth-child(3)::before { border-color: var(--l3); } .job:nth-child(4)::before { border-color: var(--muted); }
+.job-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2px 16px; align-items: baseline; }
+.job h3 { font-size: 1.2rem; }
+.job h3 a { text-decoration-color: var(--line); text-underline-offset: 4px; }
+.when { font: 600 0.8rem var(--mono); color: var(--muted); }
+.job .sub { color: var(--muted); font-size: 0.95rem; }
+.job ul { margin: 10px 0 0; padding-left: 18px; display: grid; gap: 5px; }
+.job li::marker { color: var(--hi); }
+
+/* skills */
+.groups { display: grid; gap: 18px; }
+.group h3 { font: 600 0.8rem var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 10px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin: 0; padding: 0; }
+.chips li { padding: 5px 12px; border-radius: 999px; background: var(--surface); border: 1.5px solid var(--line); font-size: 0.92rem; }
+.chips.key li { background: var(--accent-soft); border-color: transparent; font-weight: 700; }
+
+/* education */
+.edu { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); gap: 14px; }
+.edu div { padding: 16px; border-radius: 14px; background: var(--surface); border: 1.5px solid var(--line); display: grid; gap: 3px; }
+.edu b { font-family: var(--display); font-size: 1.05rem; }
+.edu span { color: var(--muted); font-size: 0.92rem; }
+.edu a { font: 600 0.8rem var(--mono); text-decoration-color: var(--hi); text-underline-offset: 3px; justify-self: start; margin-top: 4px; }
+
+footer { padding: 36px 0 56px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; }
+footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; }
+
+@media (max-width: 720px) {
+  .hero { grid-template-columns: minmax(0, 1fr); padding-top: 44px; gap: 22px; }
+  .photo { width: 128px; height: 128px; }
+  .feature { grid-template-columns: minmax(0, 1fr); padding: 20px; }
+  .job-head { flex-direction: column; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+<header class="wrap hero">
+  <img class="photo" src="photo.jpg" width="480" height="480" alt="Abdulrahman Albakkar">
+  <div>
+    <h1>Abdulrahman Albakkar</h1>
+    <p class="role">Android Software Engineer</p>
+    <p class="where"><span>Ankara, Türkiye</span><span>Open to remote</span></p>
+    <p class="lede">I build and ship production Android apps in Kotlin. Over 4 years I’ve worked on a news app used by over a million people, published my own apps to Google Play, and built Android Lab, a free interactive site for learning Android.</p>
+    <nav class="links" aria-label="Contact">
+      <a class="btn primary" href="mailto:albakkar997@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Email me</a>
+      <a class="btn" href="https://www.linkedin.com/in/abdulrahman-albakkar/" rel="me"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.5h4V21H3V9.5Zm6.5 0h3.8v1.6h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1V21h-4v-5.1c0-1.22-.02-2.78-1.7-2.78-1.7 0-1.96 1.33-1.96 2.7V21h-4V9.5Z"/></svg>LinkedIn</a>
+      <a class="btn" href="https://github.com/abdulrahmanalbakkar" rel="me"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.56 9.56 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.93.36.31.68.92.68 1.86v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>GitHub</a>
+    </nav>
+    <div class="lines" aria-hidden="true"><i></i><i></i><i></i></div>
+  </div>
+</header>
+
+<main>
+<section aria-labelledby="lab-h">
+  <div class="wrap">
+    <p class="label">Featured project</p>
+    <a class="feature" href="https://abdulrahmanalbakkar.github.io/android_lab/">
+      <div>
+        <h3 id="lab-h">Android Lab</h3>
+        <p>A free, interactive roadmap for becoming an Android developer. Every lesson is a live demo you can click through, with quizzes that come back on a spaced-review schedule, interview practice and links to the official docs.</p>
+        <p class="stats"><span>30 topics</span><span>277 lessons</span><span>4 capstone projects</span></p>
+        <span class="go">Open Android Lab →</span>
+      </div>
+      <img src="https://abdulrahmanalbakkar.github.io/android_lab/og.png" width="1200" height="630" alt="Android Lab preview" loading="lazy">
+    </a>
+  </div>
+</section>
+
+<section aria-labelledby="apps-h">
+  <div class="wrap">
+    <h2 id="apps-h">Apps I’ve built and shipped</h2>
+    <div class="apps">
+      <a class="app" href="https://play.google.com/store/apps/details?id=com.mynet.android.mynetapp">
+        <span class="meta">News · 1M+ users</span>
+        <h3>Mynet Haber</h3>
+        <p>Membership with Google Sign-In, a markets module, a background podcast player and ad-free subscriptions with Play Billing.</p>
+      </a>
+      <a class="app" href="https://play.google.com/store/apps/details?id=com.alawail.tasbih">
+        <span class="meta">50K+ downloads · 4.8★</span>
+        <h3>Tasbih</h3>
+        <p>Built and published on my own, from the first line of code to Google Play.</p>
+      </a>
+      <div class="app">
+        <span class="meta">Personal finance · Open source</span>
+        <h3>Finly</h3>
+        <p>Income and expense tracking, 150+ currencies, custom categories, filters and backup. Kotlin, Compose, MVVM, Clean Architecture, Hilt, Room.</p>
+        <p class="more"><a href="https://play.google.com/store/apps/details?id=com.finly.finance">Google Play</a><a href="https://github.com/abdulrahmanalbakkar/finly-android">GitHub</a></p>
+      </div>
+      <div class="app">
+        <span class="meta">Also contributed to</span>
+        <h3>Yemek.com and Onedio</h3>
+        <p>New features and improvements across Android and iOS.</p>
+        <p class="more"><a href="https://play.google.com/store/apps/details?id=com.yemeksepeti.yemekcom">Yemek.com</a><a href="https://play.google.com/store/apps/details?id=com.onedio.androidside">Onedio</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="exp-h">
+  <div class="wrap">
+    <h2 id="exp-h">Experience</h2>
+    <ol class="jobs">
+      <li class="job">
+        <div class="job-head"><h3>Android Software Engineer · <a href="https://commentout.com.tr/">Commentout</a></h3><span class="when">Mar 2025 – now · Ankara · Hybrid</span></div>
+        <p class="sub">Mynet Haber, Yemek.com, Onedio</p>
+        <ul>
+          <li>Own Android feature development, maintenance and releases, working closely with backend engineers.</li>
+          <li>Built Google Sign-In membership, a financial markets module, a background podcast player and ad-free subscriptions with Google Play Billing.</li>
+          <li>Run the Google Ad Manager integration: interstitial, banner, native and rewarded ads, plus mediation.</li>
+          <li>Restructured Firebase Analytics events and used Remote Config for feature flags.</li>
+          <li>Reworked bottom navigation, reimplemented dark mode with DayNight, and fixed memory leaks, ANRs and crashes.</li>
+        </ul>
+      </li>
+      <li class="job">
+        <div class="job-head"><h3>Android Developer · <a href="https://www.apptec360.com/">AppTec360</a></h3><span class="when">Nov 2024 – Feb 2025 · Switzerland · Remote</span></div>
+        <ul>
+          <li>Migrated a legacy app’s local database from SQLite to Room.</li>
+          <li>Researched competing parental-control apps’ features and UX to support product planning.</li>
+        </ul>
+      </li>
+      <li class="job">
+        <div class="job-head"><h3>Android Developer · <a href="https://al-awail.com/website/site/?lang=en">al-awail.com</a></h3><span class="when">Jul 2022 – Oct 2024 · UAE · Remote</span></div>
+        <ul>
+          <li>Built a prayer-time display app on my own, with drag-and-drop layouts made from custom Android views.</li>
+          <li>Built and published Tasbih: 50K+ downloads and a 4.8-star rating.</li>
+          <li>Built the company’s <a href="https://shop.al-awail.net/">Shopify storefront</a>.</li>
+        </ul>
+      </li>
+      <li class="job">
+        <div class="job-head"><h3>Frontend Web Developer Intern · Expert Systems Group</h3><span class="when">Jul – Sep 2021 · Istanbul · Remote</span></div>
+        <ul><li>HTML, CSS, JavaScript, Bootstrap and Git in a four-person team.</li></ul>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section aria-labelledby="skills-h">
+  <div class="wrap">
+    <h2 id="skills-h">Skills</h2>
+    <div class="groups">
+      <div class="group"><h3>Core</h3><ul class="chips key"><li>Kotlin</li><li>Jetpack Compose</li><li>Coroutines &amp; Flow</li><li>MVVM / MVI</li><li>Clean Architecture</li><li>Java</li></ul></div>
+      <div class="group"><h3>Android</h3><ul class="chips"><li>Android SDK</li><li>XML Views</li><li>Hilt</li><li>Room</li><li>Retrofit</li><li>OkHttp</li><li>WebSockets</li><li>WorkManager</li><li>Foreground services</li><li>Performance</li><li>Kotlin Multiplatform</li><li>Compose Multiplatform</li></ul></div>
+      <div class="group"><h3>Firebase &amp; Play</h3><ul class="chips"><li>Cloud Messaging</li><li>Crashlytics</li><li>Analytics</li><li>Remote Config</li><li>Play Billing</li><li>Google Ad Manager</li></ul></div>
+      <div class="group"><h3>Tools</h3><ul class="chips"><li>Git</li><li>GitHub</li><li>GitLab</li><li>Jira</li><li>Android Studio</li><li>Xcode</li><li>Figma</li><li>AI-assisted development</li></ul></div>
+      <div class="group"><h3>Languages</h3><ul class="chips"><li>Arabic (native)</li><li>English (professional)</li><li>Turkish (professional)</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="edu-h">
+  <div class="wrap">
+    <h2 id="edu-h">Education &amp; certificates</h2>
+    <div class="edu">
+      <div><b>BSc Computer Engineering</b><span>Ankara University · 2018 – 2022</span></div>
+      <div><b>Backend Web Development Bootcamp</b><span>Re:Coded · 2023</span><a href="https://www.credential.net/a0ee7e99-2fce-4ec8-9dda-531c203c132e">Certificate</a></div>
+      <div><b>Programming with Kotlin</b><span>Stevdza-San</span><a href="https://www.credential.net/6ef2b333-7bfe-421a-9dad-0ff447853a0e">Certificate</a></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap"><span>© 2026 Abdulrahman Albakkar</span><a href="mailto:albakkar997@gmail.com">albakkar997@gmail.com</a></div>
+</footer>
+</body>
+</html>
