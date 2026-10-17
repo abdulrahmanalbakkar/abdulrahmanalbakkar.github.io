@@ -107,6 +107,8 @@ section > .wrap > h2 { font-size: 1.7rem; margin-bottom: 22px; }
 .edu div { padding: 16px; border-radius: 14px; background: var(--surface); border: 1.5px solid var(--line); display: grid; gap: 3px; }
 .edu b { font-family: var(--display); font-size: 1.05rem; }
 .edu span { color: var(--muted); font-size: 0.92rem; }
+.edu span a.plain { font: inherit; color: inherit; margin: 0; }
+.sd { color: var(--muted); max-width: 75ch; }
 .edu a { font: 600 0.8rem var(--mono); text-decoration-color: var(--hi); text-underline-offset: 3px; justify-self: start; margin-top: 4px; }
 
 footer { padding: 36px 0 56px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; }
@@ -128,7 +130,7 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
     <h1>Abdulrahman Albakkar</h1>
     <p class="role">Android Software Engineer</p>
     <p class="where"><span>Ankara, Türkiye</span><span>Open to remote</span></p>
-    <p class="lede">I build and ship production Android apps in Kotlin. Over 4 years I’ve worked on a news app used by over a million people, published my own apps to Google Play, and built Android Lab, a free interactive site for learning Android.</p>
+    <p class="lede">Android Software Engineer with 4+ years of experience developing and maintaining production Android applications using Kotlin and Java. Skilled in Android architecture, feature development, performance optimization, and release management. Experienced in independently delivering Android applications and collaborating with cross-functional teams to build and improve production software.</p>
     <nav class="links" aria-label="Contact">
       <a class="btn primary" href="mailto:albakkar997@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Email me</a>
       <a class="btn" href="https://www.linkedin.com/in/abdulrahman-albakkar/" rel="me"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.5h4V21H3V9.5Zm6.5 0h3.8v1.6h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1V21h-4v-5.1c0-1.22-.02-2.78-1.7-2.78-1.7 0-1.96 1.33-1.96 2.7V21h-4V9.5Z"/></svg>LinkedIn</a>
@@ -161,23 +163,23 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
       <a class="app" href="https://play.google.com/store/apps/details?id=com.mynet.android.mynetapp">
         <span class="meta">News · 1M+ users</span>
         <h3>Mynet Haber</h3>
-        <p>Membership with Google Sign-In, a markets module, a background podcast player and ad-free subscriptions with Play Billing.</p>
+        <p>Android feature development, maintenance, and release management at Commentout.</p>
       </a>
       <a class="app" href="https://play.google.com/store/apps/details?id=com.alawail.tasbih">
-        <span class="meta">50K+ downloads · 4.8★</span>
+        <span class="meta">50K+ downloads · 4.8 stars</span>
         <h3>Tasbih</h3>
-        <p>Built and published on my own, from the first line of code to Google Play.</p>
+        <p>Independently built and published on Google Play.</p>
       </a>
       <div class="app">
-        <span class="meta">Personal finance · Open source</span>
+        <span class="meta">Personal Finance App</span>
         <h3>Finly</h3>
-        <p>Income and expense tracking, 150+ currencies, custom categories, filters and backup. Kotlin, Compose, MVVM, Clean Architecture, Hilt, Room.</p>
+        <p>Independently developed and published a personal finance Android app featuring income and expense tracking, 150+ currencies, customizable categories, transaction filtering, and data backup/restore. Built with Kotlin, Jetpack Compose, MVVM, Clean Architecture, Hilt, and Room.</p>
         <p class="more"><a href="https://play.google.com/store/apps/details?id=com.finly.finance">Google Play</a><a href="https://github.com/abdulrahmanalbakkar/finly-android">GitHub</a></p>
       </div>
       <div class="app">
         <span class="meta">Also contributed to</span>
         <h3>Yemek.com and Onedio</h3>
-        <p>New features and improvements across Android and iOS.</p>
+        <p>Developing new features and improving existing functionality across Android and iOS.</p>
         <p class="more"><a href="https://play.google.com/store/apps/details?id=com.yemeksepeti.yemekcom">Yemek.com</a><a href="https://play.google.com/store/apps/details?id=com.onedio.androidside">Onedio</a></p>
       </div>
     </div>
@@ -189,34 +191,36 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
     <h2 id="exp-h">Experience</h2>
     <ol class="jobs">
       <li class="job">
-        <div class="job-head"><h3>Android Software Engineer · <a href="https://commentout.com.tr/">Commentout</a></h3><span class="when">Mar 2025 – now · Ankara · Hybrid</span></div>
-        <p class="sub">Mynet Haber, Yemek.com, Onedio</p>
+        <div class="job-head"><h3>Android Software Engineer · <a href="https://commentout.com.tr/">Commentout</a></h3><span class="when">Mar 2025 – Present · Ankara · Hybrid</span></div>
+        <p class="sub"><a href="https://play.google.com/store/apps/details?id=com.mynet.android.mynetapp">Mynet Haber</a> · News · 1M+ users</p>
         <ul>
-          <li>Own Android feature development, maintenance and releases, working closely with backend engineers.</li>
-          <li>Built Google Sign-In membership, a financial markets module, a background podcast player and ad-free subscriptions with Google Play Billing.</li>
-          <li>Run the Google Ad Manager integration: interstitial, banner, native and rewarded ads, plus mediation.</li>
-          <li>Restructured Firebase Analytics events and used Remote Config for feature flags.</li>
-          <li>Reworked bottom navigation, reimplemented dark mode with DayNight, and fixed memory leaks, ANRs and crashes.</li>
+          <li>Responsible for Android feature development, maintenance, and release management, collaborating closely with backend engineers on most feature implementations.</li>
+          <li>Developed user membership with Google Sign-In, a financial markets module, a background podcast player, and ad-free subscriptions using Google Play Billing.</li>
+          <li>Managed Google Ad Manager integrations, including interstitial, banner, native, and rewarded ads, and mediation.</li>
+          <li>Restructured Firebase Analytics event tracking and used Firebase Remote Config for feature flags.</li>
+          <li>Improved the app’s overall user experience by resolving usability issues and refining existing UI components and behaviors, including reworking bottom navigation and reimplementing dark mode using the DayNight theme.</li>
+          <li>Improved app stability by fixing memory leaks, ANRs, and crashes.</li>
         </ul>
+        <p class="sub" style="margin-top:8px">Also contributed to <a href="https://play.google.com/store/apps/details?id=com.yemeksepeti.yemekcom">Yemek.com</a> and <a href="https://play.google.com/store/apps/details?id=com.onedio.androidside">Onedio</a>, developing new features and improving existing functionality across Android and iOS.</p>
       </li>
       <li class="job">
         <div class="job-head"><h3>Android Developer · <a href="https://www.apptec360.com/">AppTec360</a></h3><span class="when">Nov 2024 – Feb 2025 · Switzerland · Remote</span></div>
         <ul>
-          <li>Migrated a legacy app’s local database from SQLite to Room.</li>
-          <li>Researched competing parental-control apps’ features and UX to support product planning.</li>
+          <li>Conducted competitive research on parental control applications, analyzing competitors’ features and UI/UX, and documented findings in a report to support product planning.</li>
+          <li>Migrated a legacy Android application’s local database from SQLite to Room.</li>
         </ul>
       </li>
       <li class="job">
         <div class="job-head"><h3>Android Developer · <a href="https://al-awail.com/website/site/?lang=en">al-awail.com</a></h3><span class="when">Jul 2022 – Oct 2024 · UAE · Remote</span></div>
         <ul>
-          <li>Built a prayer-time display app on my own, with drag-and-drop layouts made from custom Android views.</li>
-          <li>Built and published Tasbih: 50K+ downloads and a 4.8-star rating.</li>
-          <li>Built the company’s <a href="https://shop.al-awail.net/">Shopify storefront</a>.</li>
+          <li>Independently developed an Android application for prayer-time displays, implementing customizable drag-and-drop layouts using custom Android views.</li>
+          <li>Independently built and published <a href="https://play.google.com/store/apps/details?id=com.alawail.tasbih">Tasbih</a> on Google Play, reaching 50K+ downloads and achieving a 4.8-star rating.</li>
+          <li>Built the company’s <a href="https://shop.al-awail.net/">e-commerce storefront</a> for prayer-time display products using Shopify.</li>
         </ul>
       </li>
       <li class="job">
         <div class="job-head"><h3>Frontend Web Developer Intern · Expert Systems Group</h3><span class="when">Jul – Sep 2021 · Istanbul · Remote</span></div>
-        <ul><li>HTML, CSS, JavaScript, Bootstrap and Git in a four-person team.</li></ul>
+        <ul><li>Gained hands-on experience with HTML, CSS, JavaScript, Bootstrap, Git, and GitHub, and collaborated with a four-person team to develop a website as a final project.</li></ul>
       </li>
     </ol>
   </div>
@@ -226,11 +230,11 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
   <div class="wrap">
     <h2 id="skills-h">Skills</h2>
     <div class="groups">
-      <div class="group"><h3>Core</h3><ul class="chips key"><li>Kotlin</li><li>Jetpack Compose</li><li>Coroutines &amp; Flow</li><li>MVVM / MVI</li><li>Clean Architecture</li><li>Java</li></ul></div>
-      <div class="group"><h3>Android</h3><ul class="chips"><li>Android SDK</li><li>XML Views</li><li>Hilt</li><li>Room</li><li>Retrofit</li><li>OkHttp</li><li>WebSockets</li><li>WorkManager</li><li>Foreground services</li><li>Performance</li><li>Kotlin Multiplatform</li><li>Compose Multiplatform</li></ul></div>
-      <div class="group"><h3>Firebase &amp; Play</h3><ul class="chips"><li>Cloud Messaging</li><li>Crashlytics</li><li>Analytics</li><li>Remote Config</li><li>Play Billing</li><li>Google Ad Manager</li></ul></div>
-      <div class="group"><h3>Tools</h3><ul class="chips"><li>Git</li><li>GitHub</li><li>GitLab</li><li>Jira</li><li>Android Studio</li><li>Xcode</li><li>Figma</li><li>AI-assisted development</li></ul></div>
-      <div class="group"><h3>Languages</h3><ul class="chips"><li>Arabic (native)</li><li>English (professional)</li><li>Turkish (professional)</li></ul></div>
+      <div class="group"><h3>Android</h3><ul class="chips key"><li>Kotlin</li><li>Java</li><li>Android SDK</li><li>Jetpack Compose</li><li>XML</li><li>Kotlin Coroutines &amp; Flow</li><li>MVVM/MVI</li><li>Clean Architecture</li></ul>
+        <ul class="chips" style="margin-top:8px"><li>Hilt</li><li>Room</li><li>Retrofit (REST)</li><li>OkHttp</li><li>WebSockets</li><li>WorkManager</li><li>Android Services (foreground/background)</li><li>Firebase (Cloud Messaging, Crashlytics, Analytics, Remote Config)</li><li>Google Play Billing</li><li>Google Ad Manager</li><li>Performance Optimization</li><li>Kotlin Multiplatform &amp; Compose Multiplatform (personal projects)</li></ul></div>
+      <div class="group"><h3>Tools &amp; AI</h3><ul class="chips"><li>Git</li><li>GitHub</li><li>GitLab</li><li>Jira</li><li>Android Studio</li><li>Xcode</li><li>Figma</li><li>Agentic Development (Claude, Codex, Antigravity, Cursor)</li></ul></div>
+      <div class="group"><h3>System design fundamentals</h3><p class="sd">Self-directed study of system design fundamentals, including SQL/NoSQL databases, caching, API design (REST, GraphQL), scalability (vertical/horizontal scaling, load balancing), high availability, networking (HTTP/HTTPS, TCP/UDP), and security (authentication, authorization).</p></div>
+      <div class="group"><h3>Languages</h3><ul class="chips"><li>Arabic (Native)</li><li>English (Full Professional Proficiency)</li><li>Turkish (Full Professional Proficiency)</li></ul></div>
     </div>
   </div>
 </section>
@@ -239,9 +243,10 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
   <div class="wrap">
     <h2 id="edu-h">Education &amp; certificates</h2>
     <div class="edu">
-      <div><b>BSc Computer Engineering</b><span>Ankara University · 2018 – 2022</span></div>
-      <div><b>Backend Web Development Bootcamp</b><span>Re:Coded · 2023</span><a href="https://www.credential.net/a0ee7e99-2fce-4ec8-9dda-531c203c132e">Certificate</a></div>
-      <div><b>Programming with Kotlin</b><span>Stevdza-San</span><a href="https://www.credential.net/6ef2b333-7bfe-421a-9dad-0ff447853a0e">Certificate</a></div>
+      <div><b>BSc in Computer Engineering</b><span><a class="plain" href="https://comp.eng.ankara.edu.tr/en/main-page/">Ankara University</a> · GPA: 3.17/4.00 · 2018 – 2022</span><a href="https://drive.google.com/file/d/14fxL3IhMg04fNaKWkVpvec4lKBE9wbwi/view?usp=drive_link">Diploma</a></div>
+      <div><b>English Preparatory Program</b><span>Ankara University · Completed to C1 · 2017 – 2018</span></div>
+      <div><b>Backend Web Development Bootcamp</b><span>Re:Coded · Mar – Aug 2023</span><a href="https://www.credential.net/a0ee7e99-2fce-4ec8-9dda-531c203c132e">Certificate</a></div>
+      <div><b>Programming with Kotlin</b><span>Stevdza-San</span><a href="https://www.credential.net/6ef2b333-7bfe-421a-9dad-0ff447853a0e?username=abdulrahmanalbakkar956262">Certificate</a></div>
     </div>
   </div>
 </section>
